@@ -13,50 +13,69 @@
             font-family: 'LoSumires', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: white;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .hero {
-            padding: 50px 20px;
-            background-color: #1e1e1e;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e1e1e, #333);
+            color: white;
         }
         .hero img {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
         }
         .button {
             background-color: #ff4500;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             display: inline-block;
             margin-top: 20px;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #e03e00;
         }
         .section {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #222;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: white;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .rockets {
-            margin-top: 20px;
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .grid-item {
+            flex: 1 1 45%;
+            min-width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         .rockets img {
-            width: 100px;
+            width: 120px;
             height: auto;
-            margin: 10px;
+            margin: 15px;
         }
         footer {
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #1e1e1e;
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #222;
+            color: white;
         }
     </style>
 </head>
@@ -74,16 +93,17 @@
             <p>STB is a community-driven memecoin representing the backbone of the working class. No rugs, no scams, just real people building something great.</p>
         </div>
 
-        <div class="section">
-            <h2>Why STB?</h2>
-            <p>Built on Solana, STB is fast, low-cost, and accessible. We stand for honesty, transparency, and hard work.</p>
-        </div>
-
-        <div class="section rockets">
-            <h2>To the Moon!</h2>
-            <p>STB is launching with the strength of the working class. Get ready to take off!</p>
-            <img src="rocket1.png" alt="Rocket Ship">
-            <img src="rocket2.png" alt="Rocket Ship">
+        <div class="grid">
+            <div class="grid-item">
+                <h2>Why STB?</h2>
+                <p>Built on Solana, STB is fast, low-cost, and accessible. We stand for honesty, transparency, and hard work.</p>
+            </div>
+            <div class="grid-item">
+                <h2>To the Moon!</h2>
+                <p>STB is launching with the strength of the working class. Get ready to take off!</p>
+                <img src="rocket1.png" alt="Rocket Ship">
+                <img src="rocket2.png" alt="Rocket Ship">
+            </div>
         </div>
 
         <div class="section">
