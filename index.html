@@ -13,72 +13,81 @@
             font-family: 'LoSumires', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212;
+            color: white;
             text-align: center;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: auto;
             padding: 40px 20px;
         }
         .hero {
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #1e1e1e, #333);
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #ff4500, #121212);
             color: white;
+            text-transform: uppercase;
         }
         .hero img {
-            max-width: 80%;
+            max-width: 50%;
             height: auto;
         }
         .button {
             background-color: #ff4500;
             color: white;
-            padding: 14px 28px;
+            padding: 16px 32px;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 8px;
             display: inline-block;
             margin-top: 20px;
-            font-size: 1.2em;
-            transition: background 0.3s;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
         .button:hover {
             background-color: #e03e00;
+            transform: scale(1.05);
         }
         .section {
-            margin: 50px 0;
-            padding: 40px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin: 60px 0;
+            padding: 60px;
+            background-color: #1e1e1e;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(255, 69, 0, 0.2);
             max-width: 90%;
             margin-left: auto;
             margin-right: auto;
+            text-transform: uppercase;
         }
         .grid {
             display: flex;
-            gap: 30px;
+            gap: 40px;
             flex-wrap: wrap;
             justify-content: center;
         }
         .grid-item {
             flex: 1 1 45%;
             min-width: 320px;
-            padding: 25px;
-            background: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background: #292929;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px rgba(255, 69, 0, 0.15);
             text-align: center;
         }
         .rockets img {
-            width: 40px;
+            width: 60px;
             height: auto;
             display: block;
-            margin: 15px auto;
+            margin: 20px auto;
+            animation: float 2s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-10px); }
         }
         footer {
-            margin-top: 70px;
-            padding: 25px;
+            margin-top: 80px;
+            padding: 30px;
             background-color: #222;
             color: white;
         }
@@ -87,24 +96,24 @@
 <body>
     <div class="hero">
         <img src="STB.png" alt="SteelToeBoots Banner">
-        <h1 style="font-size: 2.5em;">STEELTOEBOOTS<br>A MEMECOIN REVOLUTION</h1>
-        <a href="#about" class="button">Learn More</a>
+        <h1 style="font-size: 3em;">STEELTOEBOOTS<br>A MEMECOIN REVOLUTION</h1>
+        <a href="#about" class="button">Join the Revolution</a>
     </div>
     
     <div class="container">
         <div id="about" class="section">
-            <h2 style="font-size: 2em;">WHAT IS $STB?</h2>
-            <p style="font-size: 1.2em;">Founded by a group of skilled craftsmen forged in the fiery crucible. $STB is a community-driven memecoin representing the backbone of the working class. No rugs, no scams, just real people building something great.</p>
+            <h2 style="font-size: 2.2em;">WHAT IS $STB?</h2>
+            <p style="font-size: 1.3em;">Founded by a group of skilled craftsmen forged in the fiery crucible. $STB is a community-driven memecoin representing the backbone of the working class. No rugs, no scams, just real people building something great.</p>
         </div>
 
         <div class="grid">
             <div class="grid-item">
-                <h2 style="font-size: 2em;">WHY $STB?</h2>
-                <p style="font-size: 1.2em;">Built on Solana, $STB is pioneering a revolutionary and unique concept powered by a community of real people.</p>
+                <h2 style="font-size: 2.2em;">WHY $STB?</h2>
+                <p style="font-size: 1.3em;">Built on Solana, $STB is pioneering a revolutionary and unique concept powered by a community of real people.</p>
             </div>
             <div class="grid-item">
-                <h2 style="font-size: 2em;">TO THE MOON!</h2>
-                <p style="font-size: 1.2em;">$STB is launching with the strength of the working class. Prepare for liftoff.</p>
+                <h2 style="font-size: 2.2em;">TO THE MOON!</h2>
+                <p style="font-size: 1.3em;">$STB is launching with the strength of the working class. Prepare for liftoff.</p>
                 <img src="rocket1.png" alt="Rocket Ship" class="rockets">
             </div>
         </div>
